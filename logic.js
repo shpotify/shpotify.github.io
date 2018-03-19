@@ -1,4 +1,4 @@
-var excuses = [
+/*var excuses = [
     'I\'m sick',
     'I have a doctors appointment today',
     'I have a dentist appointment today',
@@ -18,4 +18,15 @@ var excuses = [
 function newExcuse(){
 var randomNumber = Math.floor(Math.random() * (excuses.length));
      document.getElementById('display').innerHTML = excuses[randomNumber];
+
 }
+*/
+{
+var initialDate = new Date(2018, 03, 15); // Attention: month is zero-based
+var now = Date.now();
+var difference = now - initialDate;
+var millisecondsPerDay = 24 * 60 * 60 * 1000;
+var daysSince = Math.floor(difference / millisecondsPerDay);
+alert(daysSince); // 80
+}
+    
