@@ -11,10 +11,7 @@
     'I have a sick kid',
     'My water pipes broke',
     'My basement is flooded',
-    
-    
 ]
-
 function newExcuse(){
 var randomNumber = Math.floor(Math.random() * (excuses.length));
      document.getElementById('display').innerHTML = excuses[randomNumber];
@@ -22,7 +19,7 @@ var randomNumber = Math.floor(Math.random() * (excuses.length));
 }
 */
 // Calculate days since Dec 1st 2012
-{
+
 var initialDate = new Date(2018, 02, 15); // Dec 1st 2012
 var now = Date.now();
 var difference = now - initialDate;
@@ -31,4 +28,4 @@ var daysSince = Math.floor(difference / millisecondsPerDay);
 var moneySaved = (daysSince*8);
 // Write result to HTML
 document.getElementById('money_Saved').innerHTML = daysSince;
-}
+
