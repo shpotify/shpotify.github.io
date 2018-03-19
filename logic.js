@@ -22,7 +22,7 @@ var randomNumber = Math.floor(Math.random() * (excuses.length));
 }
 */
 {
-var initialDate = new Date(2018, 03, 15); // Attention: month is zero-based
+var initialDate = new Date(2018, 15, 03); // Attention: month is zero-based
 var now = Date.now();
 var difference = now - initialDate;
 var millisecondsPerDay = 24 * 60 * 60 * 1000;
