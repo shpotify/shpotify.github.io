@@ -25,7 +25,7 @@ var now = Date.now();
 var difference = now - initialDate;
 var millisecondsPerDay = 24 * 60 * 60 * 1000;
 var daysSince = Math.floor(difference / millisecondsPerDay);
-var moneySaved = (daysSince*8);
+var moneySaved = (daysSince.toString()*8);
 // Write result to HTML
 document.getElementById('money_Saved').innerHTML = daysSince;
 
