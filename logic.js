@@ -21,12 +21,14 @@ var randomNumber = Math.floor(Math.random() * (excuses.length));
 
 }
 */
+// Calculate days since Dec 1st 2012
 {
-var initialDate = new Date(2018, 02, 15); // Attention: month is zero-based
+var initialDate = new Date(2018, 02, 15); // Dec 1st 2012
 var now = Date.now();
 var difference = now - initialDate;
 var millisecondsPerDay = 24 * 60 * 60 * 1000;
 var daysSince = Math.floor(difference / millisecondsPerDay);
-alert(daysSince); // 80
+var moneySaved = daysSince*8;
+// Write result to HTML
+document.getElementById('money_Saved').innerHTML = daysSince;
 }
-    
